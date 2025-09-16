@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Premium Linktree with Categories</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
@@ -27,11 +27,11 @@
       <div class="links-container">
         <!-- kategori -->
         <div class="link-group">
-          <div class="link-item">Website</div>
-          <div class="dropdown">
-            <a class="" href="https://bandungkota.bnn.go.id">Website BNN Kota Bandung</a>
-          </div>
+          <a class="link-item" href="https://bandungkota.bnn.go.id" target="_blank">
+            Website BNN Kota Bandung
+          </a>
         </div>
+
         <div class="link-group">
           <div class="link-item">Layanan</div>
           <div class="dropdown">
@@ -39,7 +39,7 @@
             <div class="sub-link-group">
               <div class="sub-link-item">SKHPN</div>
               <div class="sub-dropdown">
-                <a href="#">Info</a>
+                <a href="#" data-info="skhpn">Info</a>
                 <a href="https://boss.bnn.go.id/layanan_skhpn/daftarskhpn">Pendaftaran</a>
               </div>
             </div>
@@ -48,19 +48,19 @@
             <div class="sub-link-group">
               <div class="sub-link-item">Edukasi</div>
               <div class="sub-dropdown">
-                <a href="#">Info</a>
-                <a href="#">Bank Poster</a>
+                <a href="poster.html">Bank Poster</a>
                 <a href="https://perpustakaan.bnn.go.id/id">Perpustakaan BNN</a>
-                <a href="https://ews.bnn.go.id">Web NPS</a>
+                <a href="https://ews.bnn.go.id">Informasi NPS</a>
               </div>
             </div>
 
             <!-- Laporan/Pengaduan -->
             <div class="sub-link-group">
-              <div class="sub-link-item">Laporan</div>
+              <div class="sub-link-item">Pengajuan</div>
               <div class="sub-dropdown">
-                <a href="#">Info</a>
-                <a href="https://lapor.go.id">Sampaikan Laporan</a>
+                <a href="#" data-info="laporan">Pengajuan Magang</a>
+                <a href="#" data-info="laporan">Permohonan Sosialisasi</a>
+                <a href="https://lapor.go.id">Pengaduan</a>
               </div>
             </div>
           </div>
@@ -86,6 +86,9 @@
             <a href="https://youtube.com/@bnnkotabandung9072?si=DHwwE_Nb2lCSGVGs" class="social-btn youtube">
               <i class="fab fa-youtube"></i> YouTube
             </a>
+            <a href="https://www.facebook.com/share/17DhHrBwq5/" class="social-btn facebook">
+              <i class="fab fa-facebook">Facebook</i>
+            </a>
           </div>
         </div>
 
@@ -93,7 +96,7 @@
           <div class="link-item">Hubungi Kami</div>
           <div class="dropdown">
             <a href="tel:02263179358">Telepon</a>
-            <a href="mailto:bnnkota_bandung@bnn.go.id">Email</a>
+            <a href="mailto:bnnkota_bandung@bnn.go.id">Email 1</a>
             <a href="mailto:bnnkbdg@gmail.com">Email 2</a>
           </div>
         </div>
@@ -102,7 +105,17 @@
       </div>
     </div>
   </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+
 </body>
-<script src="script.js"></script>
+<script src="assets/script.js"></script>
 
 </html>
