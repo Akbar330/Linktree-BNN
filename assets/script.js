@@ -57,6 +57,12 @@ document.addEventListener("DOMContentLoaded", () => {
     skhpn: `
       <img src="assets/skhpn.jpg" alt="SKHPN" style="max-width: 100%; height: auto; margin-bottom: 15px;">
     `,
+    magang: `
+      <img src="assets/magang.jpg" alt="Magang" style="max-width: 100%; height: auto; margin-bottom: 15px;">
+      `,
+    sosialisasi: `
+      <img src="assets/sosialisasi.jpg" alt="Sosialisasi" style="max-width: 100%; height: auto; margin-bottom: 15px;">
+      `,
 // 
 
   };
@@ -68,6 +74,22 @@ document.querySelectorAll(".sub-dropdown a").forEach(link => {
     // kalau Bank Poster, langsung ke halaman baru (skip modal)
     if (link.textContent.trim() === "Bank Poster") {
       return; // biarin default action jalan (href ke bank-poster.html)
+    }
+
+    if (link.textContent.trim() === "Perpustakaan BNN") {
+      return; // biarin default action jalan (buka tab baru)
+    }
+
+    if (link.textContent.trim() === "Informasi NPS") {
+      return; // biarin default action jalan (buka tab baru)
+    }
+
+    if (link.textContent.trim() === "Pengaduan") {
+      return; // biarin default action jalan (buka tab baru)
+    }
+
+    if (link.textContent.trim() === "Pendaftaran") {
+      return; // biarin default action jalan (buka tab baru)
     }
 
     e.preventDefault(); // selain Bank Poster, tahan default action
